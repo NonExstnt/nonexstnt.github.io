@@ -1,1 +1,28 @@
-Hello world
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Redirecting...</title>
+    <script>
+      window.onload = function () {
+        const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+        // Check for iPhone
+        if (/iPhone|iPad|iPod/i.test(userAgent)) {
+          window.location.href = "https://podcasts.apple.com/"; // Replace with your Apple Podcast link
+        }
+        // Check for Android
+        else if (/Android/i.test(userAgent)) {
+          window.location.href = "https://open.spotify.com/"; // Replace with your Spotify link
+        }
+        // Fallback for other devices (desktop, etc.)
+        else {
+          window.location.href = "https://yoursubstack.substack.com"; // Replace with your Substack link
+        }
+      };
+    </script>
+  </head>
+  <body>
+    <p>Redirecting based on your device...</p>
+  </body>
+</html>
+
