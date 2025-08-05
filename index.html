@@ -1,29 +1,5 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Redirecting...</title>
-    <script>
-      (function () {
-        const userAgent = navigator.userAgent || navigator.vendor || window.opera;
 
-        // Check for iPhone
-        if (/iPhone|iPad|iPod/i.test(userAgent)) {
-          window.location.replace("https://podcasts.apple.com/au/podcast/reformed-devotionals-daily-podcast/id1751219485");
-        }
-        // Check for Android
-        else if (/Android/i.test(userAgent)) {
-          window.location.replace("spotify:show:4Ok0ofmnBDjRW16v7dkQEu?si=db4bdbad7b884c0c");
-        }
-        // Fallback for other devices (desktop, etc.)
-        else {
-          window.location.replace("https://reformeddevotional.substack.com/podcast");
-        }
-      })();
-    </script>
-    <style>
-      body { display: none; }
-    </style>
-  </head>
-  <body></body>
 </html>
 
