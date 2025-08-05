@@ -1,5 +1,59 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>NonExstnt's GitHub Projects</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 20px;
+    }
+    .project {
+      background-color: #fff;
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .project h2 {
+      margin-top: 0;
+    }
+    .project a {
+      color: #0366d6;
+      text-decoration: none;
+    }
+    .project a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <h1>Featured GitHub Projects by NonExstnt</h1>
 
+  <div class="project">
+    <h2><a href="https://github.com/NonExstnt/COS40007-Design-Project" target="_blank">COS40007 Design Project</a></h2>
+    <p><strong>Description:</strong> A machine learning-based web application for predicting 5G network performance.</p>
+    <p><strong>Key Features:</strong></p>
+    <ul>
+      <li>5G Bitrate Predictor using LSTM (PyTorch)</li>
+      <li>5G Position Predictor using XGBoost</li>
+      <li>FastAPI backend serving ML models</li>
+    </ul>
+    <p><strong>Example API Usage:</strong></p>
+    <pre>
+Bitrate Prediction:
+POST /predict_bitrate/
+{
+  "latitude": -37.8136,
+  "longitude": 144.9631,
+  "speed": 50.0,
+  "hour": 14,
+  "latency_avg": 30.5
+}
+    </pre>
+  </div>
+
+</body>
 </html>
-
