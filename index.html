@@ -2,58 +2,137 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>NonExstnt's GitHub Projects</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Michael van der Merwe | Projects</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
+      font-family: 'Segoe UI', Arial, sans-serif;
       margin: 0;
-      padding: 20px;
+      padding: 0;
+      background: #f8f9fa;
+      color: #222;
+      line-height: 1.7;
     }
-    .project {
-      background-color: #fff;
-      border-radius: 8px;
-      padding: 20px;
-      margin-bottom: 20px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    header {
+      background: #212529;
+      color: #fff;
+      padding: 2rem 1rem 1rem 1rem;
+      text-align: center;
     }
-    .project h2 {
-      margin-top: 0;
+    header h1 {
+      margin: 0 0 0.4rem 0;
+      font-size: 2.5rem;
     }
-    .project a {
-      color: #0366d6;
+    header p {
+      margin: 0.2rem 0 0 0;
+      font-size: 1.1rem;
+    }
+    nav {
+      text-align: center;
+      margin: 1rem 0 2rem 0;
+    }
+    nav a {
+      color: #0077b5;
       text-decoration: none;
+      margin: 0 1rem;
+      font-weight: 500;
     }
-    .project a:hover {
-      text-decoration: underline;
+    main {
+      max-width: 800px;
+      margin: 2rem auto;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(60,60,60,0.07);
+      padding: 2rem;
+    }
+    section.project {
+      margin-bottom: 2.5rem;
+    }
+    section.project h2 {
+      margin-top: 0;
+      color: #00558c;
+    }
+    .tags {
+      margin-bottom: 0.8rem;
+    }
+    .tag {
+      display: inline-block;
+      background: #e1eaff;
+      color: #235;
+      border-radius: 4px;
+      font-size: 0.95em;
+      padding: 0.2em 0.7em;
+      margin: 0 0.4em 0.4em 0;
+      vertical-align: middle;
+      letter-spacing: 0.03em;
+    }
+    @media (max-width: 600px) {
+      main { padding: 1rem; }
+      header { padding: 1.5rem 0.5rem 0.7rem 0.5rem; }
+    }
+    footer {
+      text-align: center;
+      color: #888;
+      font-size: 0.95em;
+      margin: 2rem 0 1rem 0;
     }
   </style>
 </head>
 <body>
-  <h1>Featured GitHub Projects by NonExstnt</h1>
+  <header>
+    <h1>Michael van der Merwe</h1>
+    <p>Software Engineering & IoT | Swinburne University of Technology (Finishing 2025)</p>
+    <nav>
+      <a href="https://github.com/NonExstnt" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/in/michaeljvdm/" target="_blank">LinkedIn</a>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <h2>About Me</h2>
+      <p>
+        I am a passionate Software Engineering student majoring in Software Engineering and Computer Science (Internet of Things) at Swinburne University of Technology, set to graduate in 2025.
+        My core languages are <strong>Python</strong>, <strong>TypeScript</strong>, <strong>JavaScript</strong>, and <strong>Go</strong>.
+        Outside of tech, I’m a big fan of tennis and running!
+      </p>
+    </section>
 
-  <div class="project">
-    <h2><a href="https://github.com/NonExstnt/COS40007-Design-Project" target="_blank">COS40007 Design Project</a></h2>
-    <p><strong>Description:</strong> A machine learning-based web application for predicting 5G network performance.</p>
-    <p><strong>Key Features:</strong></p>
-    <ul>
-      <li>5G Bitrate Predictor using LSTM (PyTorch)</li>
-      <li>5G Position Predictor using XGBoost</li>
-      <li>FastAPI backend serving ML models</li>
-    </ul>
-    <p><strong>Example API Usage:</strong></p>
-    <pre>
-Bitrate Prediction:
-POST /predict_bitrate/
-{
-  "latitude": -37.8136,
-  "longitude": 144.9631,
-  "speed": 50.0,
-  "hour": 14,
-  "latency_avg": 30.5
-}
-    </pre>
-  </div>
+    <section class="project">
+      <h2>
+        <a href="https://github.com/NonExstnt/asteroids" target="_blank" style="color:#00558c; text-decoration:none;">
+          asteroids
+        </a>
+      </h2>
+      <div class="tags">
+        <span class="tag">Solo Project</span>
+        <span class="tag">Python</span>
+        <span class="tag">Game</span>
+      </div>
+      <p>
+        <strong>asteroids</strong> is my most advanced solo project, showcasing my skills in Python and game development. This project demonstrates not only my ability to design and implement complex systems independently, but also my passion for building engaging, interactive experiences from scratch. 
+      </p>
+    </section>
 
+    <section class="project">
+      <h2>
+        <a href="https://github.com/NonExstnt/COS40007-Design-Project" target="_blank" style="color:#00558c; text-decoration:none;">
+          COS40007-Design-Project
+        </a>
+      </h2>
+      <div class="tags">
+        <span class="tag">Group Project</span>
+        <span class="tag">TypeScript</span>
+        <span class="tag">JavaScript</span>
+        <span class="tag">Go</span>
+        <span class="tag">Software Engineering</span>
+      </div>
+      <p>
+        <strong>COS40007-Design-Project</strong> is my most advanced group project, completed as part of my studies at Swinburne. Working collaboratively, we tackled real-world software engineering challenges, with a focus on modern web technologies and robust backend services. This project highlights my ability to contribute effectively in a team setting, utilizing TypeScript, JavaScript, and Go.
+      </p>
+    </section>
+  </main>
+  <footer>
+    &copy; 2025 Michael van der Merwe &ndash; Built with HTML &amp; ❤️
+  </footer>
 </body>
 </html>
